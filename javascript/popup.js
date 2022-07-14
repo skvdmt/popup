@@ -1,7 +1,6 @@
 // getPopup function take querySelectors to popup and open link objects, add events and return popup element
 function getPopup (popupSelector, openLinkSelector) {
     const popup = document.querySelector(popupSelector)
-    popup.openLink = document.querySelector(openLinkSelector)
     popup.open = function() {
         this.classList.add("show")
     }
@@ -12,8 +11,11 @@ function getPopup (popupSelector, openLinkSelector) {
         if (e.target !== this) return;
         popup.close()
     })
-    popup.openLink.addEventListener("click", function() {
-        popup.open()
-    })
+    if (openLinkSelector !== null) {
+        popup.openLink = document.querySelector(openLinkSelector)
+        popup.openLink.addEventListener("click", function() {
+            popup.open()
+        })
+    }
     return popup
 }
