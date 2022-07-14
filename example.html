@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PopUp Example</title>
+    <script src="javascript/popup.min.js"></script>
+    <link href="css/popup.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<style>
+    .example1 .window {
+        max-width: 400px;
+    }
+    .link1 {
+        color:#69f;
+        border-bottom: 1px dashed #69f;
+        padding-bottom: 2px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    window.onload = function () {
+        const popup1 = getPopup(".example1", ".link1")
+    }
+</script>
+
+<body>
+
+<div class="popup default example1">
+    <div class="window">
+        <p>In massa augue, sagittis id turpis sit amet, faucibus rhoncus urna. Donec non erat mattis metus dapibus interdum vel ut ligula. Sed semper congue semper. Vestibulum vel rhoncus felis. Duis accumsan tristique dictum. Curabitur laoreet massa a nibh eleifend, vitae ultricies metus condimentum. Suspendisse at nibh nibh.</p>
+    </div>
+</div>
+
+<div>
+    <p>Vivamus non accumsan lorem, a luctus nunc. Ut nunc arcu, egestas ut lorem a, suscipit elementum ligula. Quisque blandit ornare magna ac sodales. Integer at ligula quam. Proin sollicitudin arcu massa, sit amet aliquam nunc tincidunt ac. Sed sed erat et enim consequat iaculis. Sed tristique risus ut dolor tempor, ut vestibulum nisi venenatis. Vivamus malesuada leo elit, eu egestas nulla elementum sed. Nulla facilisi. Donec nec turpis ut nisl molestie elementum. Etiam facilisis massa id viverra maximus. Donec vel purus sit amet eros ullamcorper ultrices dignissim non neque. <a class="link1">open popup</a></p></p>
+    <p>Cras sed laoreet neque. Phasellus porttitor est eu sodales commodo. Sed ac mauris at erat venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tristique tortor ac ligula convallis, vel ultricies orci fringilla. Etiam eros risus, bibendum in aliquam at, commodo at purus. Vivamus in neque nec lorem pretium sollicitudin at a orci. Duis eget ex vitae neque congue condimentum.</p>
+    <p>Proin odio tortor, condimentum et nisi id, sollicitudin rhoncus massa. Curabitur fermentum vulputate enim in rutrum. Suspendisse neque metus, sollicitudin non finibus congue, viverra et est. Curabitur quis maximus nisl, sit amet rutrum ligula. Cras tempus quis mi vel dictum. Proin erat augue, dictum rutrum porta in, luctus id mauris. Ut non dui mollis, varius magna nec, accumsan nunc. Duis finibus euismod tempor.</p>
+</div>
+
+</body>
+</html>
